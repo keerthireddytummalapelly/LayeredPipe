@@ -96,14 +96,15 @@ Compiler : GNU C
 System: Linux OS - Ubuntu
 
 Follow the below instructions to run the program:
-    Step 1: Open terminal.
-    Step 2: Compile and build supporting c files.
-        Command: gcc -o physicalLayer physicalLayer.c
-        Command: gcc -o dataLinkLayer dataLinkLayer.c
-        Command: gcc -o applicationLayer applicationLayer.c
-        Command: gcc -o toUpperCase toUpperCase.c
-    Step 3: Compile and build source code.
-        Command: gcc -o producerConsumer producerConsumer.c
-    Step 4: Run the executable/object file and pass the input filename as a command line argument.
-        Command: ./producerConsumer winVirus.inpf
-    Output: winVirus.binf, winVirus.chck, winVirus.oupf, and winVirus.done files will be generated
+
+ Step 1: Open terminal.
+ Step 2: Compile and build supporting c files.
+    Command: gcc -o physicalLayer physicalLayer.c
+    Command: gcc -o dataLinkLayer dataLinkLayer.c
+    Command: gcc -o applicationLayer applicationLayer.c
+    Command: gcc -o toUpperCase toUpperCase.c
+ Step 3: Compile and build source code.
+    Command: gcc -o producerConsumer producerConsumer.c
+ Step 4: Run the executable/object file and pass the input filename as a command line argument.
+    Command: ./producerConsumer winVirus.inpf
+ Output: winVirus.binf, winVirus.chck, winVirus.oupf, and winVirus.done files will be generated
