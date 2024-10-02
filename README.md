@@ -88,23 +88,37 @@ The program is developed using C and is implemented as follows:
 7.  Producer process decodes the data and stores it in a file with .done extension.
 8.  Redirection of standard input/output of processes is achieved using dup2(). Commands are executed by the processes created using execlp() function.
 
-### Testing
 
-Requirements:
+### How to Run the Program
 
-Compiler : GNU C
-System: Linux OS - Ubuntu
+Prerequisites:
+A C compiler like gcc (GNU Compiler Collection) installed on your system.
+UNIX/Linux or macOS environment with terminal access.
 
-Follow the below instructions to run the program:
+Steps:
+1. Open Terminal
+2. Navigate to the directory where the project files are located.
+3. Compile and Build Supporting C Files
 
-1. Open terminal.
-2. Compile and build supporting c files.
-        Command: gcc -o physicalLayer physicalLayer.c
-        Command: gcc -o dataLinkLayer dataLinkLayer.c
-        Command: gcc -o applicationLayer applicationLayer.c
-        Command: gcc -o toUpperCase toUpperCase.c
-3. Compile and build source code.
-        Command: gcc -o producerConsumer producerConsumer.c
-4. Run the executable/object file and pass the input filename as a command line argument.
-        Command: ./producerConsumer winVirus.inpf
-   Output: winVirus.binf, winVirus.chck, winVirus.oupf, and winVirus.done files will be generated
+```
+gcc -o physicalLayer physicalLayer.c
+gcc -o dataLinkLayer dataLinkLayer.c
+gcc -o applicationLayer applicationLayer.c
+gcc -o toUpperCase toUpperCase.c
+
+```
+4. Compile and Build the Main Source Code
+
+```
+gcc -o producerConsumer producerConsumer.c
+
+```
+
+5. Run the Program
+
+```
+./producerConsumer winVirus.inpf
+
+```
+
+6. Output: winVirus.binf, winVirus.chck, winVirus.oupf, and winVirus.done files will be generated add this in same structire to read me
